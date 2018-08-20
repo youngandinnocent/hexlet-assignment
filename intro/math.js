@@ -9,4 +9,4 @@ const weight = 70;
 const c = 300000000;
 const energy = weight * c * c;
 
-console.log(energy, "joules");
+console.log(energy, "joules"); // 6300000000000000000 'joules'

@@ -6,4 +6,7 @@
 const squareOfSum = (a, b) => (a * a) + (2 * a * b) + (b * b);
 
 // V1.2
+const squareOfSum = (a, b) => (a + b) ** 2;
+
+// V1.3
 const squareOfSum = (a, b) => (a + b) * (a + b);

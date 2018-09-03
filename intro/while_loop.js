@@ -13,14 +13,11 @@ export default (m, n) => {
   if (m <= 0 && n <= 0) {
     return NaN;
   }
-  console.log(m, n);
   if (m >= n) {
-    console.log(m, n);
     let result = n;
     while (m % result !== 0 || n % result !== 0) {
       result -= 1;
     }
-    console.log(m, n, result);
     return result;
   } else if (m < n) {
     let result = m;

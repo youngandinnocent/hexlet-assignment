@@ -2,7 +2,7 @@
 
 // Solution:
 
-V1.2 using the Math method
+V1.1 using the Math method
 const diff = (a, b) => {
   const angle = Math.abs(a - b);
   return Math.min(angle, 360 - angle);

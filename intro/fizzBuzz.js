@@ -46,4 +46,4 @@ const fizzBuzz = (begin, end) => {
   }
 };
 
-fizzBuzz(1, 100);
+export default fizzBuzz;

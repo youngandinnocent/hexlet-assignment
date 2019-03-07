@@ -10,8 +10,23 @@
  Если диапазон пуст (в случае, когда begin > end), то функция просто ничего не печатает.
 */
 
+
+
 // Solution:
 
+//V1.1 use ternary operator and interpolation
+const fizzBuzz = (begin, end) => {
+  for (let i = begin; i <= end; i += 1) {
+    const fizz = (i % 3 === 0) ? 'Fizz' : '';
+    const buzz = (i % 5 === 0) ? 'Buzz' : '';
+    console.log(fizz || buzz ? `${fizz}${buzz}` : i);
+  }
+};
+
+export default fizzBuzz;
+
+
+//V1.2 use if condition
 const fizzBuzz = (begin, end) => {
   if ((begin || end) <= 0) {
     return null;

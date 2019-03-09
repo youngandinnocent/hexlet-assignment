@@ -7,34 +7,30 @@
 
 // Solution:
 
-const length = str => str.length;
+const square = n => n * n;
 
-const squar = n => n * n;
-
-const sumOfSquareDigits = (str) => {
+const sumOfSquareDigits = (num) => {
+  const numToString = String(num);
   let result = 0;
-  for (let i = 0; length(str) > i; i += 1) {
-    result += squar(Number(str[i]));
+  for (let i = 0; i < numToString.length; i += 1) {
+    result += square(Number(numToString[i]));
+    console.log('square', result);
   }
   return result;
 };
 
-const happyNumbers = (number) => {
-  if (number < 1) {
-    return false;
-  }
-  let result = number;
+const isHappyNumber = (number) => {
+  let happyNumber = number;
   let i = 0;
-  while (result > 0) {
-    result = sumOfSquareDigits(String(result));
+  while (i < 10) {
+    happyNumber = sumOfSquareDigits(happyNumber);
+    console.log('number', happyNumber);
     i += 1;
-    if (i > 10) {
-      return false;
-    } else if (result === 1) {
+    if (happyNumber === 1) {
       return true;
     }
   }
   return false;
 };
 
-happyNumbers(2); // false
+isHappyNumber(19); //true

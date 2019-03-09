@@ -14,7 +14,6 @@ const sumOfSquareDigits = (num) => {
   let result = 0;
   for (let i = 0; i < numToString.length; i += 1) {
     result += square(Number(numToString[i]));
-    console.log('square', result);
   }
   return result;
 };
@@ -24,7 +23,6 @@ const isHappyNumber = (number) => {
   let i = 0;
   while (i < 10) {
     happyNumber = sumOfSquareDigits(happyNumber);
-    console.log('number', happyNumber);
     i += 1;
     if (happyNumber === 1) {
       return true;

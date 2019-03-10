@@ -5,20 +5,34 @@
 
 // Solution:
 
-export default (number) => {
-  if (number === 1) {
-    return true;
-  } else if (number < 3) {
+
+//V1.1 use the division operator
+const isPowerOfThree = (number) => {
+  if (number < 1) {
     return false;
   }
-  let result = number;
-  while (result > 3) {
-    result = result / 3;
-    if (result % 3 !== 0) {
+  for (let i = number; i > 1; i /= 3) {
+    if (i % 3 !== 0) {
       return false;
     }
   }
   return true;
 };
 
-isPowerOfThree(108); // false
+export default isPowerOfThree;
+
+isPowerOfThree(108); //false
+
+
+
+//V1.2 use the multiplication operator
+
+const isPowerOfThree = (number) => {
+  let i = 1;
+  while (i < number) {
+    i *= 3;
+  }
+  return i === number;
+};
+
+isPowerOfThree(81); //true

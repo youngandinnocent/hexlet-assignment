@@ -8,6 +8,7 @@
  Вычитаем их из общего числа и получаем три возможных способа: 0101, 0110 и 1010. Ответ - 3.
 */
 
+
 // Solution:
 
 const factorial = (n) => {
@@ -15,13 +16,18 @@ const factorial = (n) => {
     return 1;
   }
   return n * factorial(n - 1);
-}
+};
 
-const withoutTwoZeros = (zero, one) => { // use the binomial coefficient
-  const numerator = factorial(one + 1);
-  const denominator = (factorial(one - (zero - 1)) * factorial(zero));
-  const result = numerator / denominator;
-  return result;
-}
+const withoutTwoZeros = (zeros, units) => {
+  if (zeros - units === 1) {
+    return 1;
+  } else if (zeros - units > 1 || zeros === 0) {
+    return 0;
+  }
+  const numerator = factorial(units + 1);
+  const denominator = (factorial(units - (zeros - 1)) * factorial(zeros));
+  const binomial = numerator / denominator;
+  return binomial;
+};
 
-withoutTwoZeros(7, 7);// 8
+withoutTwoZeros(7, 7); // 8

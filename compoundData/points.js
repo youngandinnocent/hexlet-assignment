@@ -9,12 +9,12 @@
 
     calculateDistance - функция, вычисляющая расстояние между точками
     по формуле: d = sqrt((x2−x1)^2+(y2−y1)^2)
-
-    import { makePoint, getX, getY } from 'hexlet-points'; // eslint-disable-line
 */ 
 
 
 // Solution
+
+import { makePoint, getX, getY } from 'hexlet-points'; // eslint-disable-line
 
 export const getQuadrant = (point) => {
   const x = getX(point);

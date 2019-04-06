@@ -34,46 +34,18 @@ export const denom = ratio => cdr(ratio);
 export const toString = ratio => `${numer(ratio)} / ${denom(ratio)}`;
 
 // isEqual function
-export const isEqual = (r1, r2) => {
-  const part1 = numer(r1) * denom(r2);
-  const part2 = numer(r2) * denom(r1);
-  return part1 === part2;
-};
+export const isEqual = (r1, r2) => (numer(r1) * denom(r2) === numer(r2) * denom(r1));
 
 // add function
-export const add = (r1, r2) => {
-  const a = numer(r1);
-  const b = denom(r1);
-  const c = numer(r2);
-  const d = denom(r2);
-  return make((a * d + b * c), (b * d));
-};
+export const add = (r1, r2) => make(numer(r1) * denom(r2) + denom(r1) * numer(r2), denom(r1) * denom(r2));
 
 // sub function
-export const sub = (r1, r2) => {
-  const a = numer(r1);
-  const b = denom(r1);
-  const c = numer(r2);
-  const d = denom(r2);
-  return make((a * d - b * c), (b * d));
-};
+export const sub = (r1, r2) => make(numer(r1) * denom(r2) - denom(r1) * numer(r2), denom(r1) * denom(r2));
 
 // mul function
-export const mul = (r1, r2) => {
-  const a = numer(r1);
-  const b = denom(r1);
-  const c = numer(r2);
-  const d = denom(r2);
-  return make((a * c), (b * d));
-};
+export const mul = (r1, r2) => make(numer(r1) * numer(r2), denom(r1) * denom(r2));
 
 // div function
-export const div = (r1, r2) => {
-  const a = numer(r1);
-  const b = denom(r1);
-  const c = numer(r2);
-  const d = denom(r2);
-  return make((a * d), (b * c));
-};
+export const div = (r1, r2) => make(numer(r1) * denom(r2), denom(r1) * numer(r2));
 
 // END

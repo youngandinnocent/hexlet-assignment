@@ -1,2 +1,2 @@
-# Hexlet Assignment
-List of Hexlet educational project assignments https://ru.hexlet.io
+# Hexlet-Assignments
+Practical work of the Hexlet educational project https://ru.hexlet.io

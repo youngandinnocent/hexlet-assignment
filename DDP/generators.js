@@ -2,7 +2,7 @@
 * Task:
 *    Реализуйте и экспортируйте по умолчанию класс, который представляет собой
 *    бесконечную последовательность. Объекты этого класса должны быть итерируемыми.
-*
+
 *        const seq = new Seq(1, x => x + 1);
 *        const result = seq.skip(200).take(3);
 *        for (const value of result) {
@@ -36,6 +36,7 @@
 
 // Solution:
 
+// eslint-disable-next-line import/no-unresolved
 import '@babel/polyfill';
 
 class Seq {

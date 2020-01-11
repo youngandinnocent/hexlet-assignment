@@ -4,4 +4,4 @@
 Получить данные с сервера по адресу https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
 и загрузить их на html-страницу
 
-![Heroes](https://github.com/youngandinnocent/hexlet-assignment/tree/master/DOMapi/heroes/heroes.png)
+![Heroes](heroes.png)

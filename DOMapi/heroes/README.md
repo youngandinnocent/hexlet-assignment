@@ -7,4 +7,4 @@
 ![Heroes](heroes.png)
 
 ## Solution
-![](script.js)
+[script.js](script.js)

@@ -6,5 +6,8 @@
 ### Example
 [https://balls.youngandinnocen.repl.co](https://balls.youngandinnocen.repl.co)
 
+#### Blak Hole control keys
+```up ↑``` ```down ↓``` ```left ←``` ```right →```
+
 ## Solution
 [application.js](src/application.js)

@@ -7,7 +7,7 @@
 [https://balls.youngandinnocen.repl.co](https://balls.youngandinnocen.repl.co)
 
 #### Blak Hole control keys
-```up ↑``` ```down ↓``` ```left ←``` ```right →```
+```W ↑``` ```S ↓``` ```A ←``` ```D →```
 
 ## Solution
 [application.js](src/application.js)

@@ -1,10 +1,9 @@
-html,
-body {
+html, body {
   margin: 0;
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 100%;
 }
 
@@ -23,4 +22,12 @@ h1 {
 
   color: transparent;
   text-shadow: 0 0 4px white;
+}
+
+p {
+  position: absolute;
+  margin: 0;
+  top: 35px;
+  right: 5px;
+  color: #aaa;
 }
